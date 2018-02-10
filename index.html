@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/mui/3.4.0/css/mui.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.bootcss.com/mui/3.4.0/js/mui.min.js"></script>   -->
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>   -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected --> 
+    <script type="text/javascript"> 
+      let winHeight = $(window).height();  
+      $(window).resize(function(){   
+          let HeightChange = $(window).height();  
+          if (HeightChange<winHeight) {  
+            $(".mint-tabbar").css('position','initial');  
+          }else{  
+            $(".mint-tabbar").css('position','fixed');
+          }
+      });  
+    </script>
+  </body>
+</html>
